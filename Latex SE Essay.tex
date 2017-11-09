@@ -1,0 +1,78 @@
+\documentclass{article}
+
+\begin{document}
+
+\title{Linus Torvalds - Linux and Git systems} \author{Liam Greene}
+
+\maketitle
+
+\begin{abstract}  A brief biography of Linus Torvalds, creator of the Linux kernel and Git. \end{abstract}
+
+\section{Introduction}  Linus Benedict Torvalds is a Finnish software engineer who is credited with initiating the creation and development of the Linux kernel, a free, Unix-based open-source operating system. The Linux kernel is one of the most widely ported operating system kernels in the world, available for devices ranging from android phones to supercars. Torvalds is also the creator of Git, an open-source code management system used by developers worldwide to manage their code from personal projects to large team based operations.  There is no doubt that Torvalds' ingenuity revolutionised the computer industry.  
+
+\section{Early Years}Linus Benedict Torvalds was born on December 28, 1969, to two Finnish journalists,  Nils Torvalds (father) and Anna Torvalds (mother), in Finland's capital city of Helsinki. He was named after Linus Pauling, the famous chemist and Nobel Prize winner, a fitting foreshadowing of his future innovations. \newline \newline
+
+Torvalds lived a content and cheerful childhood despite his parents divorcing when he was very young. Torvalds lived with his mother but he also spent a lot of time with his maternal grandparents, growing particularly close to his grandfather, Leo Toerngvist, a professor of statistics at the University of Helsinki. \cite{interview} \newline \newline
+
+ In the mid-1970s, his grandfather bought one of the first personal computers, a Commodore Vic 20 and began to use this previous pinnacle of engineering to teach maths and programming to Torvalds. Torvalds soon grew bored with the few programs that were available for the Vic 20, and decided to use the knowledge he gained from his grandfather, combined with some rudimentary high school programming classes and a devoted desire to learn, to create new ones. Torvalds began with using the BASIC programming language but eventually switched to the difficult but also more powerful machine code: \newline \newline 
+
+``Actually I wasn't even doing assembly programming, I was doing machine code because I did not have an assembler.  I would do all my assembly on paper and write it as binary, just because.''\cite{interview} \newline \newline
+
+Mathematics and computers became Torvalds' passions. Despite his father's efforts to interest him in sports, girls and other social activities, it was Torvalds' ``just because'' that displayed his dedication to satisfy his infatuation with technology. 
+
+\section{Education}Undeterred by his father’s attempts to steer him away from becoming a stereotypical computer character, Torvalds attended the prestigious University of Helsinki between 1988 and 1996, graduating with a master's degree in computer science from the NODES research group.  During this time he also performed his mandatory military service in the Finnish Army Uusimaa brigade where he held the rank of Second Lieutenant. In 1990, as an already accomplished software engineer, he took his first class in the newly standardised C programming language, the language that he would use to develop the Linux kernel, the core of the operating system.
+
+\section{The Birth of Linux} In the spring of 1991, Torvalds gathered his funds to purchase an IBM-compatible personal computer with a lightning quick 33MHz Intel 386 processor and a {\em huge} 4MB of memory, a throwback to a quickly overtaken era.  This processor greatly appealed to him because it represented a tremendous improvement over earlier Intel chips. As intrigued as he was with the hardware however, Torvalds was disappointed with the MS-DOS operating system that came installed on it. This operating system had not advanced sufficiently to even begin to take advantage of the vastly improved capabilities of the 386 chip, and he thus strongly preferred the much more powerful and stable UNIX operating system that he had used at university. \newline \newline
+
+In a fortunate event for the computing world, Torvalds was unable to find an alternative operating system for less than 5,000 dollars. Torvalds thus decided to create a new operating system from scratch that was based on both MINIX, a small clone of UNIX that was created by operating systems expert Andrew Tanenbaum and UNIX. Likely unaware of the sheer volume of work he would need to tame this behemoth of a task, in the summer of 1991, Torvalds began ``working towards something that [he] knew was going to be an operating system, and [his] target was basically being at about the level of MINIX, except with a much better terminal emulation package.''\cite{interview} \newline \newline
+
+On September 17 of the same year, after a monkish period of intense labour, he completed a crude version (0.01) of his new operating system. Two months later, after some refining tweaks, on October 5 1991, version 0.02 was announced, the first official version. It featured the ability to run both the bash shell (a program that provides the traditional, text-only user interface for Unix-like operating systems) and the GCC (the GNU C Compiler), two key system utilities. The biggest collaborative project the world had ever known had just begun: \newline 
+
+As I mentioned a month(?) ago, I'm working on a free version of a minix-lookalike for AT-386 computers. It has finally reached the stage where it's even usable (though may not be depending on what you want), and I am willing to put out the sources for wider distribution. It is just version 0.02 (+1 (very small) patch already), but I've successfully run bash/gcc/gnu-make/gnu-sed/compress etc under it. 
+
+Sources for this pet project of mine can be found at nic.funet.fi (128.214.6.100) in the directory /pub/OS/Linux. The directory also contains some README-file and a couple of binaries to work under linux (bash, update and gcc, what more can you ask for :-). Full kernel source is provided, as no minix code has been used. Library sources are only partially free, so that cannot be distributed currently. The system is able to compile ``as-is'' and has been known to work. Heh. . . . \cite{kernel} \newline 
+
+Torvalds was encouraged to share his source code so it would be readily available for examination and refinement by other programmers, a now common place software engineering practice.  \newline \newline
+
+In a positive decision for both the world and the future development of Linux, Torvalds decided to release his operating system under the GPL (General Public License), allowing others to use, modify and expand the software, provided they also made the code freely accessible. Eric S. Raymond, a published software engineer and advocate of free software summed up Torvalds’ view in his paper The Cathedral and the Bazaar stating, ``Given enough eyeballs, all bugs are shallow.''\cite{bazaar} With the combined of efforts of individual engineers and large corporations, the project grew at a rapid rate, as did its performance. While Torvalds initially only focused on the kernel, various forms of free software were added to Linux, such as the Ext2 File System (a system for the organisation of data files), allowing Linux to evolve into a fully functioning operating system.
+
+\section{The Growth of Linux} While initially only compatible with computers containing an x86 Intel-compatible processor, Linux's high portability meant it was soon running on most of the processors of the time. Therefore, the use of Linux continued to grow, this growth cascading into a domino effect of advancements. By 1997, conservative estimates were placing worldwide Linux installations at more than three million computers. Two years later this had soared to in excess of seven million.\cite{figures} \newline \newline
+
+Torvalds became an instructor at the University of Helsinki, where he continued to develop Linux. It was here that he met his wife, Tove Minni, a Finnish karate champion. The two married in 1997 and now have three daughters. With a growing family to provide for, Torvalds decided to take a position with the Transmeta Corporation located in the fabled Silicon Valley of California, USA. Never one for wanting money, fame or power, Torvalds continued to work on Linux  as he lived on a modest software engineer's salary, compounding his original interest in programming from his previous ``just because'', to ``just for fun.''\cite{book} However, in 1999, Red Hat and VA Linux gifted him with stock options as a compensation of gratitude for his developments, creating an overnight millionaire in Torvalds when Red Hat and VA Linux stocks went public.\cite{book} \newline \newline
+
+With large corporations such as Oracle and Intel identifying Linux as an emerging player and adopting it for use on their servers and networks, Linux continued to bloom. Further nourishment was added when Apache (a free web server service that now hosts more than 64\% of websites worldwide) was birthed through Linux, and with IBM committing to Linux research, production and promotion, Linux finally blossomed. 
+
+\section{Git} With his flourishing Linux, Torvalds and the Linux team needed an effective way of storing and editing their data between large groups. A revision control system was used to promote synergic software projects by maintaining a central repository of source code, with the most common one at the time being Concurrent Versions System (CVS). However, CVS was plagued with difficulties and limitations, leading the Linux kernel development team to begin using the newer Bitkeeper revision control tool. In April 2005, the Linux kernel community faced a demoralizing challenge when the copyright holder of BitKeeper, Larry Mcvoy, withdrew the GPL on the product. A reluctant Torvalds, albeit slightly motivated by his enjoyment of Bitkeeper, tackled the problem: \newline 
+
+ ``I really never wanted to do source control management at all and felt
+that it was just about the least interesting thing in the computing world (with
+the possible exception of databases ), and I hated all SCM’s with a passion.
+But then BitKeeper came along and really changed the way I viewed source
+control.'' \cite{control} \newline 
+
+Torvalds' attempt at at a distributed revision control system  aimed at speed, data integrity, and support for distributed, non-linear workflows, was officially realised on 7 April 2005. His project was named Git, as ``I'm an egotistical bastard, and I name all my projects after myself. First 'Linux', now 'git'' \cite{git}, a satirical self-inflicted knock on Torvalds character given git’s definition as an ``unpleasant person'' in British English slang. Much like his previous project, git thrived and became the basis behind GitHub, a web-based control revision service that is commonly used to host open-source software projects with almost 20 million users and 57 million repositories, making it the largest host of source code in the world.\cite{figures} It seems Torvalds was divinely destined for success. 
+
+\section{Conclusion} Deciding that his time in Silicon Valley was to come to a close, Torvalds and his now family of 5 decided  to move to the vibrant city of Oregon to provide a pleasant upbringing for his children.  Linus continues to work on Linux, now full-time for Open Source
+Development Lab (OSDL), an Oregon based tech company supported by a global consortium of computer companies, including IBM, who maintained their promise of support for Linux. Torvalds' innovation completely transformed the computing world twice. His story is truly one of the great tales in the history of the computers. 
+
+ \begin{thebibliography}{1}
+
+  \bibitem {book} Linus Torvalds, David Diamond, {\em Just for Fun: The Story of an Accidental Revolutionary}, 2001
+
+  \bibitem{interview} Grady Booch, {\em Oral History of Linus Torvalds},  2008
+
+  \bibitem {kernel} Linus Torvalds, {\em Free minix-like kernel sources for 386-AT}, http://www.ramix.org/linus2.html 1991
+
+   \bibitem {git} GitHub, {\em git/git}, https://github.com/git/git/blob/e83c5163316f89bfbde7d9ab23ca2e25604af290/READMEl 2005
+
+  \bibitem{bazaar} Eric S. Raymond, {\em  Cathedral and the Bazaar},  Snowball Publishing, 2010:
+ 
+
+  \bibitem{figures} The Linux Information Project, {\em Linus torvalds: A very brief and completely unauthorized biography}, 2004
+
+  \bibitem{control}Stephen Cass, {\em Linux at 25: Question and answer with Linus Torvalds}, 2016
+
+
+  \end{thebibliography}
+
+\end{document}
